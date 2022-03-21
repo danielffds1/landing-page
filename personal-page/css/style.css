@@ -3,7 +3,7 @@
 
 :root{
     --box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
-    --border: .1rem solid rgba(0,0,0,.3);
+    --border: .1rem solid rgba(0,0,0,.6);
     --white: #FFFFFF;
     --black: #000000;
     --gold-leaf: #D9B310;
@@ -175,6 +175,272 @@ html{
     padding: 1rem 7rem;
     flex-direction: column-reverse;
 }
+
+/*Configuração do Educação e experiência*/
+.formation{
+    background-image: linear-gradient(var(--black), var(--dark-blue));
+}
+
+.formation .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+.formation .box-container .box{
+    text-align: center;
+    padding: 3rem;
+    background: var(--lavender);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.formation .box-container .box span{
+    font-size: 1.3rem;
+    background: var(--black);
+    color: var(--white);
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+
+.formation .box-container .box h3{
+    font-size: 2rem;
+    color: var(--white);
+    padding-top: 1.5rem;
+}
+
+.formation .box-container .box p{
+    font-size: 1.4rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.formation .box-container .box i{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    line-height: 6rem;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--white);
+    background: var(--gold-leaf);
+}
+
+/*Configuração dos projetos*/
+.projects{
+    background: var(--gold-leaf);
+}
+
+.projects h1 span{
+    color: black;
+}
+
+.projects .organization{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.projects .organization p{
+    font-size: 2rem;
+    text-transform: capitalize;
+    background: var(--dark-blue);
+    color: white;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+
+.projects .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.projects .box-container .box{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+}
+
+
+.projects .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+}
+
+.projects .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;    
+}
+
+.projects .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.projects .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+.projects .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.projects .box-container .box .content p{
+    font-size: 1.5rem;
+    color: var(--black);
+    line-height: 1;
+    padding: 1rem 0;
+}
+
+/*Configuração da section Skill */
+.skill{
+    background: var(--dark-blue);
+}
+
+.skill .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skill .box-container .box{
+    flex: 1 1 41rem;
+}
+
+.skill .box-container .box h2{
+    font-size: 3rem;
+    color: var(--white);
+    text-align: center;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.skill .box-container .box h2 span{
+    color: var(--gold-leaf);
+}
+
+.skill .box-container .box .progress{
+    padding: 1rem 0;
+}
+
+.skill .box-container .box .progress h3{
+    font-size: 2rem;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill .box-container .box .progress h3 span{
+    color: var(--gold-leaf);
+}
+
+.skill .box-container .progress .bar{
+    height: 2rem;
+    border: .2rem solid var(--white);
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.skill .box-container .progress .bar span{
+    display: block;
+    background: var(--crimson-sky);
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.skill .box-container .progress .bar .progress-1{
+    width: 75%;
+}
+
+.skill .box-container .progress .bar .progress-2{
+    width: 65%;
+}
+
+.skill .box-container .progress .bar .progress-3{
+    width: 50%;
+}
+
+.skill .box-container .progress .bar .progress-4{
+    width: 30%;
+}
+
+.skill .box-container .progress .bar .progress-5{
+    width: 50%;
+}
+
+.skill .box-container .progress .bar .progress-6{
+    width: 50%;
+}
+
+/*Configuração do contact*/
+.contacts{
+    background: var(--gold-leaf);
+}
+
+.contacts h1 span{
+    color: var(--black);
+}
+
+.contacts .box-container{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.contacts .box-container a{
+    font-size: 5rem;
+    color: var(--dark-blue);
+}
+
+/*Configuração do Footer*/
+.footer{
+    background: var(--dark-blue);
+    padding: 1.5rem 10%;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+}
+
+.footer .box-container .box h3{
+    color: var(--white);
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.footer .box-container .box a{
+    color: var(--gray);
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    display: block;
+}
+
+.footer .box-container .box a i{
+    color: var(--crimson-sky);
+    padding-right: .5rem;
+    transition: .2s linear;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+
+
 
 @media(max-width: 1200px){
     .header{
