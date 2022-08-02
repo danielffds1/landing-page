@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Importe de ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Formulário de Pesquisa</title>
+</head>
+<body>
+  <div class="container"><!--Inicio div container-->
+    <header class="header"><!--Inicio da   section title-->
+      <h1 id=title class="title">
+        Songs you like the most
+      </h1>
+      <p id="description">
+        A música é universal, capaz de  conectar pessoas, culturas e   sociedades completamente diferentes
+      </p>
+    </header><!--Fim da section title-->
+
+    <form id="survey-form" class="form" action="#"><!--Inicio do form-->
+      <section class="user-details"><!-- Inicio section User details-->
+        
+        <div class="form-group">
+          <label id="name-label" class="detalhes" for="name">Nome Completo</label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" class="form-control" placeholder="Digite seu nome" required>
+        </div>
+        
+        <div class="form-group">
+          <label class="detalhes" for="username">Nome de Usuário</label>
+          <input 
+            type="text" 
+            id="username" 
+            name="username" class="form-control" placeholder="Digite seu nome de usuário" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="Numero-telefone" class="detalhes">Numero de Telefone</label>
+          <input 
+            type="text" 
+            id="telefone" 
+            name="telefone" class="form-control"  placeholder="Digite seu telefone"  required>
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" class="detalhes" for="number">Idade</label>
+          <input 
+            type="number" 
+            id="number" 
+            name="age" 
+            class="form-control"
+            min="10"
+            max="99" 
+            placeholder="Digite sua idade" >
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" class="detalhes" for="email">Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" class="form-control" placeholder="Digite seu email" required>
+        </div>
+
+        <div class="form-group">
+          <p>Ocupação atual</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Selecione uma ocupação</option>
+            <option value="student">Estudante</option>
+            <option value="job">Trabalho</option>
+            <option value="learner">Estagiário</option>
+            <option value="preferNo">Prefiro não dizer</option>
+            <option value="other">Outros</option>
+          </select>
+        </div>
+      </section> <!-- Inicio section User details-->
+
+      <section class="genero"><!--Inicio na section genero-->
+        <h2 class="generoTitulo">Genero</h2>
+        
+        <div class="categoria">
+          <label for="opcao-1">
+            <input 
+              type="radio" 
+              name="generoSexual" 
+              id="opcao-1"
+              class="radioInput"
+              value="masculino">
+              Maculino</label>
+          <label for="opcao-2">
+            <input 
+              type="radio" 
+              name="generoSexual" 
+              id="opcao-2"
+              class="radioInput"
+              value="feminino">
+              Feminino</label>
+          <label for="opcao-3">
+            <input 
+              type="radio" 
+              name="generoSexual" 
+              id="opcao-3"
+              class="radioInput"
+              value="nao-comentar">
+              Prefiro não comentar</label>
+          </label>
+        </div>
+      </section><!--Fim na section genero-->
+
+      <section class="preferencias"><!--Inicio da section preferencias-->
+        <div class="form-group">
+          <h2>Preferencias de músicas</h2>
+          <select id="categoriaMusical" name="" class="form-control" required>
+            <option disabled selected value>Selecione uma categoria musical</option>
+            <option value="popRock">Pop Rock</option>
+            <option value="rock">Rock</option>
+            <option value="sertanejo">Sertanejo</option>
+            <option value="pagode">Pagode</option>
+            <option value="outros">Outros</option>
+          </select>
+        </div>
+      </section><!--Fim da section preferencias-->
+
+      <section class="bandasMusicais"><!-- Inicio bandas musicais preferidas-->
+        <div class="form-group">
+          <h2>Bandas musicais preferidas <span>(Marque todas opções desejadas)</span></h2>
+
+          <div class="bandas">
+            <label for="">
+              <input 
+              name="bandasBrasileiras"
+              value="O-rappa"
+              type="checkbox"
+              class="entradasCheckbox"> O Rappa 
+            </label>
+
+            <label for="">
+              <input 
+              name="bandasBrasileiras"
+              value="legiao-urbana"
+              type="checkbox"
+              class="entradasCheckbox"> Legião Urbana 
+            </label>
+
+            <label for="">
+              <input 
+              name="bandasBrasileiras"
+              value="los-hermanos"
+              type="checkbox"
+              class="entradasCheckbox"> Los Hermanos 
+            </label>
+
+            <label for="">
+              <input 
+              name="bandasBrasileiras"
+              value="sepultura"
+              type="checkbox"
+              class="entradasCheckbox"> Sepultura 
+            </label>
+            
+            <label for="">
+              <input 
+              name="bandasBrasileiras"
+              value="angra"
+              type="checkbox"
+              class="entradasCheckbox"> Angra 
+            </label>
+
+            <label for="">
+              <input 
+              name="bandasBrasileiras"
+              value="ze-neto-cristiano "
+              type="checkbox"
+              class="entradasCheckbox"> Zé Neto & Cristiano  
+            </label>
+
+            <label for="">
+              <input 
+              name="bandasBrasileiras"
+              value="jorge-mateus"
+              type="checkbox"
+              class="entradasCheckbox"> Jorge & Mateus 
+            </label>
+            
+            <label for="">
+              <input 
+              name="bandasBrasileiras"
+              value="henrique-juliano"
+              type="checkbox"
+              class="entradasCheckbox"> Henrique & Juliano 
+            </label>
+
+            <label for="">
+              <input 
+              name="bandasBrasileiras"
+              value="exaltasamba"
+              type="checkbox"
+              class="entradasCheckbox"> Exaltasamba 
+            </label>
+
+            <label for="">
+              <input 
+              name="bandasBrasileiras"
+              value="bom-gosto"
+              type="checkbox"
+              class="entradasCheckbox"> Bom Gosto 
+            </label>
+
+            <label for="">
+              <input 
+              name="bandasBrasileiras"
+              value="turma-do-pagode"
+              type="checkbox"
+              class="entradasCheckbox"> Turma do Pagode
+            </label>
+          </div><!--Fim da div bandas-->
+        </div><!--Fim da div form-group-->
+      </section><!-- Fim bandas musicais preferidas-->
+
+      <section>
+        <div class="form-group">
+          <h2>Texto para comentários</h2>
+          <textarea 
+          name="comentario" 
+          id="comentario" 
+          cols="30" rows="10"
+          class="entradaTextArea"
+          placeholder="Entre com seu comentário"></textarea>
+        </div>
+      </section>
+
+      <div class="button">
+        <input id="submit" type="submit" value="Registro">
+      </div>
+
+    </form><!--Fim section form-->
+  </div><!--Fim div container-->
+</body>
+</html>
